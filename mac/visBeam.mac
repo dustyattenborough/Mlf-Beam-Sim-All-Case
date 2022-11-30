@@ -1,0 +1,21 @@
+# Initialize kernel
+/run/initialize
+
+#Set the random seeds. Ranecu engine needs 2 numbers
+/random/setSeeds 1 11
+
+#Run an overlap check
+#/geometry/test/run
+
+/control/verbose 2
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 0
+
+/vis/open OGLSQt
+#/vis/open OGLIQt
+#/vis/open HepRepFile
+/vis/scene/create
+/vis/scene/add/volume
+/vis/drawVolume
+/vis/viewer/flush

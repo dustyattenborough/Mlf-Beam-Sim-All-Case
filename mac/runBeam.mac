@@ -1,0 +1,18 @@
+# Initialize kernel
+/run/initialize
+
+#Run an overlap check
+#/geometry/test/run
+
+/control/verbose 2
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 0
+
+/run/printProgress 10
+
+# Set the output filename
+# This will override the command line "-o" argument if used
+#/analysis/setFileName mlf_beam_sim_results.root
+
+/run/beamOn 20000
